@@ -10,18 +10,19 @@
 <body>
 
   <script src=""></script>
-  <div class="DivBtn">
-    <button id="BoutonHalloween">Envie d'une petite frayeure?</button>
-    </div>
+  <button id="BoutonHalloween">Envie d'une petite frayeure?</button>
   <script>
   </script>
   <style>
-    body{
-      margin: 0 100px;
-      background-image:url(https://images6.alphacoders.com/552/552086.jpg);
-      background-size: 100% 1080px;
-      background-repeat: no-repeat;
-    }
+    html {
+/* L'image est positionnée en fond et est centrée */
+background: url(https://images6.alphacoders.com/552/552086.jpg) no-repeat center center fixed;
+/* Ajout de la propriété avec les préfixes pour tous les moteurs de rendu */
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
     #BoutonHalloween{
       color: white;
       font-weight: bold ;
@@ -30,12 +31,7 @@
       border: none;
       border-radius: 10px;
       display: block;
-      margin : auto;
-    }
-    .DivBtn{
-      backdrop-filter: blur(5px);
-      height: 97vmin;
-      width: 97vmax;
+      margin : 50vmax auto;
     }
   </style>
 </body>
